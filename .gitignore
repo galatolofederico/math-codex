@@ -1,0 +1,9 @@
+/env
+__pycache__/
+
+/tmp
+/datasets
+/completions
+/results
+
+.env
