@@ -1,8 +1,9 @@
 import os
 import openai
 
-def get_completion(prompt, model, temperature, max_tokens, top_p, stop):
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+def get_completion(prompt, model, temperature, max_tokens, top_p, stop, apikey=None):
+    openai.api_key = os.getenv("OPENAI_API_KEY") if apikey is None else apikey
+    assert openai.api_key != "", "You have to set the OpenAI API Key. You can use the OPENAI_API_KEY environment variable"
     return openai.Completion.create(
         engine=model,
         prompt=prompt,
