@@ -8,7 +8,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from src.utils import read_jsonl, extract_answer
-from src.execute import execute_program
+from src.execute import execute_program_fast
 
 
 parser = argparse.ArgumentParser()
@@ -41,7 +41,7 @@ for elem in tqdm(dataset):
         with open(os.path.join(completions_folder, f"{key}.json"), "r") as f:
             completions = json.load(f)
             program = completions["code"]
-            output = execute_program(program)
+            output = execute_program_fast(program)
             output["program"] = program
             output["key"] = key
             if output["valid"] and not output["halts"] and not output["error"]:
