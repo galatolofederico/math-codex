@@ -4,7 +4,7 @@ import json
 import re
 
 from src.openai import get_completion
-from src.execute import execute_program
+from src.execute import execute_program_subprocess
 
 def pipeline(apikey, problem, model, temperature=0.5, max_tokens=512):
     print(apikey, problem, model, temperature, max_tokens)
@@ -55,7 +55,7 @@ def pipeline(apikey, problem, model, temperature=0.5, max_tokens=512):
             )
 
             code += completion
-            output = execute_program(code)
+            output = execute_program_subprocess(code)
             
             if output["valid"] and not output["halts"] and not output["error"]:
                 return [
