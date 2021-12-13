@@ -7,7 +7,6 @@ from src.openai import get_completion
 from src.execute import execute_program_subprocess
 
 def pipeline(apikey, problem, model, temperature=0.5, max_tokens=512):
-    print(apikey, problem, model, temperature, max_tokens)
     if model == "Codex":
         for i in range(0, 5): # 5 maximum tries
             prompt = f"#Write a Python function that solves the problem: \"{problem}\"\ndef"
