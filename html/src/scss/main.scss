@@ -1,0 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~tabulator-tables/src/scss/themes/tabulator_simple";
+@import "highlight.js/styles/default.css";
+
+@media (min-width: 2000px){
+    .container-giga {
+        max-width: 1900px;
+    }
+}
