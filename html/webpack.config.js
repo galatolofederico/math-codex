@@ -1,7 +1,6 @@
 const glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const LoadingScreenPlugin = require('loading-screen')
 
 module.exports = {
   entry: glob.sync("./src/js/*.js"),
@@ -18,8 +17,7 @@ module.exports = {
       patterns: [
           { from: "assets", to: "assets" }
       ]
-  }),
-    new LoadingScreenPlugin()
+  })
   ],
   devtool: 'inline-source-map',
   devServer: {
