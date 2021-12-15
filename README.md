@@ -1,10 +1,10 @@
 # math-codex
 
-Repository for the paper [Zero-shot natural language mathematical problem solving](https://pubs.galatolo.me/galatolomathcodex.pdf)
+Repository for the paper [Zero-shot mathematical problem solving via Generative Pre-trained Transformers](https://pubs.galatolo.me/galatolomathcodex.pdf)
 
 The outputs of the proposed pipeline and GPT-3 for the whole GSM8K test set are available [here]()
 
-An in-browser demo is available [here]()
+An in-browser demo is available [here](https://galatolofederico.github.io/math-codex/)
 
 ![MC-ZSL Pipeline](./README.md.d/pipeline.png)
 
