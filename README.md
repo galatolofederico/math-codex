@@ -4,7 +4,7 @@ Repository for the paper [Zero-shot mathematical problem solving via Generative 
 
 The outputs of the proposed pipeline and GPT-3 for the whole GSM8K test set are available [here](https://galatolofederico.github.io/math-codex/)
 
-An in-browser demo is available [here]()
+An in-browser demo is available [here](https://colab.research.google.com/drive/1XzTjlbIqbe3f-0WV5o7Ar40szQAB6DY1?usp=sharing)
 
 ![MC-ZSL Pipeline](./README.md.d/pipeline.png)
 
